@@ -1,5 +1,6 @@
-/build/
-/nbproject/
-/dist/
+build/*
+nbproject/*
+dist/*
+build.xml
 manifest.mf
-!/dist/sudoku-validator.jar
+!dist/sudoku-validator.jar
