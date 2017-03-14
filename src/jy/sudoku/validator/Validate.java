@@ -6,17 +6,19 @@ package jy.sudoku.validator;
  */
 
 public class Validate implements Runnable {
-    private int[] puzzle;
+    private final int[] puzzle;
     
     /**
      * gets the puzzle that is supplied;
      * sets all variables to class variables.
+     * @param puzzle
      */
     public Validate(int puzzle[]) {
         
         this.puzzle = puzzle;
     }//end Validate
     
+    @Override
     public void run() {
         /**
          * sets up an array to hold data for each number (1-9);

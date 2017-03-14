@@ -16,6 +16,7 @@ public class Check {
     /**
      * gets the puzzle that is supplied;
      * sets all variables to class variables.
+     * @param puzzle
      */
     public void setup(int[][] puzzle) {
         this.puzzle = puzzle;
@@ -54,10 +55,7 @@ public class Check {
          */
         pool.shutdown();
         
-        if(correct == false) {
-            return false;
-        }
-        return true;
+        return correct != false;
     }//end run
     
     /**
